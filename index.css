@@ -1,0 +1,204 @@
+body{
+    background: #E6E6E6;
+}
+header{
+    text-align: center;
+    padding: 45px 0;
+    user-select: none;
+    min-width: 510px;
+}
+header span{
+    color: #A4A4A4;
+}
+header h1{
+    color: #242227;
+}
+header h4{
+    color: #4F4F4F;
+}
+
+/* Inicio menu */
+
+/* Inicio Passoword box */
+#password{
+    font-size: 2em;
+    background: #F6F5F6;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 80%;
+}
+#password::selection  {
+    background: none;
+    /* color: #fff; */
+}
+#menu{
+    margin: 0 auto;
+    /* margin-top: -20px; */
+    padding: 20px;
+    width: 100%;
+    max-width: 850px;
+    min-width: 510px;
+    background-color: #F6F5F6;
+    border: 1px solid #B5B5B6;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;
+}
+#box-password{
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid #DBD8D8;
+    color: #242227;
+}
+#preferencia{
+    margin-top: 20px;
+}
+#password{
+    color: #666668;
+    font-size: 2.5em;
+    width: 76%;
+}
+#message-error{
+    color: #dc3545;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-help{
+    border: none;
+    background-color: #F6F5F6;
+    color: #666668;
+}
+.btn-help i{
+    font-size: 2.3em;
+    
+}
+    
+/* Fim Passoword box */
+
+/* Inicio opções */
+.check-options{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-options input{
+    display: none;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #898787;
+    border-radius: 5px;
+    background-color: #F1EEEE;
+}
+
+.check-options:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+
+.check-options input:checked ~ .checkmark{
+    border: none;
+    background-color: #E60C0C;
+}
+
+.checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-options input:checked ~ .checkmark:after{
+    display: block;
+}
+
+.check-options .checkmark:after{
+    left: 9px;
+    top: 2px;
+    width: 8px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.align{
+    width: 200px;
+}
+
+.align-2{
+    width: 140px;
+}
+/* Fim opções */
+
+/* Inicio quantidade de caracteres */
+h5{
+    font-family: 'Open Sans', sans-serif;
+    color: #4F4F4F;
+    font-size: 1em;
+}
+#number{
+    text-align: center;
+    width: 75px;
+    padding: 9px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px 0 rgba(0,0,0,0.25);
+    margin-right: 8px;
+}
+#length-password{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+input[type=number]{
+    -webkit-appearance: none;
+    user-select: none;
+    appearance: none;
+}
+/* slide */
+.slide-container{
+    float: right;
+    margin-right: 17px;
+    margin-top: 9px;
+}
+/* modifica a barra */
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 240px;
+    height: 10px;
+    border-radius: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slide:hover{
+    opacity: 1;
+}
+/* modifica a bolinha */
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #E60C0C;
+    cursor: pointer;
+}
+/* Fim quantidade de caracteres */
