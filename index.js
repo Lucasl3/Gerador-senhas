@@ -3,12 +3,10 @@ var selector = Array()
 function preferencias(){
     let preferencias = document.getElementsByName('check'), j = 0
     selector = Array()
-    // console.log(preferencias.length)
     for(var i in preferencias){
         if(preferencias[i].checked == true){
             selector[j] = preferencias[i].value
             j++
-            // console.log(`${preferencias[i].value}`)
         }
     }
     Password(document.getElementById('number').value)
@@ -103,7 +101,6 @@ function Password(size){
                 password += caractere
             }
         }
-        console.log(password)
         document.getElementById('password').value = password
     }
 }
